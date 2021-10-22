@@ -72,7 +72,9 @@ pozitiveRec (l:ls) =
     else pozitiveRec ls
 
 --b) descrieri de liste
--- nu se poate
+pozitiveComp :: [Int] -> Int
+pozitiveComp [] = 0
+pozitiveComp l = length [z | z <-l , z > 0]
 
 --7)Scrieti o functie care data fiind o lista de numere calculeaza lista pozitiilor
 -- elementelor impare din lista originala.
